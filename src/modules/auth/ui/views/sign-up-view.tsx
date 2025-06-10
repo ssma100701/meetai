@@ -34,7 +34,7 @@ const formSchema = z
     path: ['confirmPassword'],
   });
 
-const SignInView = () => {
+const SignUpView = () => {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
@@ -165,7 +165,7 @@ const SignInView = () => {
                 {!!error && (
                   <Alert className='bg-destructive/10 border-none'>
                     <OctagonAlertIcon
-                      className='h-4 w-4 !text-desctructive'
+                      className='h-4 w-4 !text-destructive'
                       color='red'
                     />
                     <AlertTitle>{error}</AlertTitle>
@@ -221,4 +221,4 @@ const SignInView = () => {
   );
 };
 
-export default SignInView;
+export default SignUpView;
