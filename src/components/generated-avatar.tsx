@@ -10,7 +10,7 @@ interface GenerateAvatarProps {
   variant: 'botttsNeutral' | 'initials';
 }
 
-export const GenrateAvatar = ({
+export const GenerateAvatar = ({
   seed,
   className,
   variant,
